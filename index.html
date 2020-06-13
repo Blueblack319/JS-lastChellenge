@@ -8,6 +8,7 @@
   </head>
   <body>
     <h1 class="js-clock">00:00:00</h1>
+    <h2 class="js-weather"></h2>
     <form method="POST" class="js-userContainer">
       <h1 class="userName js-userName">What's your name?</h1>
       <input
@@ -16,7 +17,19 @@
         placeholder="Write your name."
       />
     </form>
+    <form method="POST" class="js-toDoContainer">
+      <h2>To Do List</h2>
+      <input
+        type="text"
+        placeholder="Write your schedule"
+        class="js-toDoInput"
+      />
+    </form>
+    <ul class="js-toDoList"></ul>
     <script src="clock.js"></script>
     <script src="userName.js"></script>
+    <script src="todo.js"></script>
+    <script src="bg.js"></script>
+    <script src="weather.js"></script>
   </body>
 </html>

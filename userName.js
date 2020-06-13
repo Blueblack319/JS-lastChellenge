@@ -13,6 +13,10 @@ function handleChange(event) {
   userAnswer.classList.remove(SHOWING);
 }
 
+function handleSubmit(event) {
+  event.preventDefault();
+}
+
 function loadName() {
   const userName = localStorage.getItem(USER);
   if (userName !== null) {
@@ -22,8 +26,9 @@ function loadName() {
 }
 
 function init() {
-  userAnswer.addEventListener("change", handleChange);
   loadName();
+  userContainer.addEventListener("submit", handleSubmit);
+  userAnswer.addEventListener("change", handleChange);
 }
 
 init();
